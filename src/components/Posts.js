@@ -34,7 +34,7 @@ class Posts extends Component {
     this.props.fetchPosts();
   }
 
-  componentWillReciveProps(nextProps){
+  componentWillReceiveProps(nextProps){
     // we can access to the new post property
     if (nextProps.newPost) { //if is actually there
       this.props.posts.unshift(nextProps.newPost);
